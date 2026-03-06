@@ -1,0 +1,22 @@
+
+
+@font-face {
+  font-family: Nikea; /* set name */
+  src: url(../fonts/NIKEA.otf); /* url of the font */
+}
+@font-face {
+  font-family: Resotho; /* set name */
+  src: url(../fonts/Resotho-Extralight.otf); /* url of the font */
+}
+@font-face {
+  font-family: ModernTimes; /* set name */
+  src: url(../fonts/TA-ModernTimes-ultcnSemiLight.otf); /* url of the font */
+}
+@font-face {
+  font-family:Walrus ; /* set name */
+  src: url(../fonts/Walrus-Bold.otf); /* url of the font */
+}
+/* @font-face {
+  font-family: ; /* set name */
+  /* src: url(../fonts); /* url of the font */
+/* } */ 

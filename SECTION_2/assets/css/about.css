@@ -1,0 +1,104 @@
+.about__section {
+    padding-top: 50px;
+    position: relative;
+    color: white;
+    padding: 150px 10%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background: linear-gradient(270deg, #000000, #00173e, #02000b);
+    background-size: 600% 600%;
+    animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* TITLE */
+.about__title {
+    font-size: 4rem;
+    font-family: walrus, sans-serif;
+    border-bottom: #5795ff 1px solid;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: 5px;
+    animation: float 3s infinite alternate ease-in-out;
+}
+
+/* MAIN LAYOUT */
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* TEXT SIDE */
+.about__text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+}
+.about__text p {
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* VIDEO SIDE */
+.about__media {
+    flex: 1;
+    position: relative;
+}
+
+.about__media video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    transition: transform 0.5s ease;
+}
+
+.about__media video:hover {
+    transform: scale(1.05);
+}
+
+/* SOFTWARE ICONS */
+.about__skills {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.about__skills h1 {
+    font-family: Nikea, sans-serif;
+    margin-bottom: 20px;
+    color: #5795ff;
+}
+
+.about__skills img {
+    transition: transform 0.3s ease, filter 0.2s ease;
+}
+
+.about__skills img:hover {
+    transform: translateY(-10px) scale(1.2);
+    filter: drop-shadow(0 0 15px #5795ff);
+}
+.logo__skills {
+    display: flex;
+    gap: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about__container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
