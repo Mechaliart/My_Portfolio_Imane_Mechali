@@ -25,6 +25,13 @@
     margin-bottom: 80px;
     letter-spacing: 5px;
     animation: float 3s infinite alternate ease-in-out;
+    animation: bordermove 3s infinite alternate ease-in-out;
+    opacity: 1;
+}
+@keyframes bordermove {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
 }
 
 /* MAIN LAYOUT */
