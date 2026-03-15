@@ -1,92 +1,62 @@
-/* ================= SECTION ================= */
 
-.gallery__section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 100px 0;
-    background-color: rgb(0, 1, 21);
+
+.contact-gallery{
+background:#6d74ff;
+padding:80px ;
+color:white;
+text-align:center;
 }
 
-/* ================= CARD ================= */
+/* TITLE */
 
-.gallery__content {
-    position: relative;
-    width: 500px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
+.contact-title{
+font-size:3rem;
+margin-bottom:50px;
+font-family:Trebuchet MS, sans-serif;
 }
 
-/* ================= IMAGE ================= */
+/* GRID */
 
-.gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+gap:40px;
 }
 
-/* ================= OVERLAY ================= */
+/* FIGURE */
 
-.gallery__content::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(35, 39, 73, 0.808);
-    mix-blend-mode: multiply;
-    opacity: 0;
-    transition: opacity 0.4s ease;
+.contact-grid figure{
+background:#ffffff;
+border-radius:10px;
+overflow:hidden;
 }
 
-/* ================= TITLE ================= */
+/* IMAGE */
 
-.gallery__title {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    color: white;
-    font-size: 2rem;
-    z-index: 2;
-
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease;
-}
-.gallery__title p {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #ddd;
-    font-family: Walrus, sans-serif;
-}
-/* ================= HOVER EFFECT ================= */
-
-.gallery__content:hover .gallery__img {
-    transform: scale(1.05);
+.contact-grid img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
-.gallery__content:hover::after {
-    opacity: 1;
+/* CAPTION */
+
+.contact-grid figcaption{
+padding:20px 22px;
+font-size:1rem;
+line-height:1.6;
+opacity:0.9;
 }
 
-.gallery__content:hover .gallery__title {
-    opacity: 1;
-    transform: translateY(0);
+/* EMAIL */
+
+.contact-email{
+margin-top:70px;
+font-size:1.3rem;
+line-height:1.7;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-    .gallery__content {
-        width: 90%;
-        height: 250px;
-    }
-}
-.gallery__main__title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
+.contact-email strong{
+font-size:1.4rem;
 }
