@@ -1,0 +1,52 @@
+/* FOOTER */
+
+.site-footer{
+background-color: black;
+color:white;
+padding:60px 20px 30px;
+text-align:center;
+}
+
+.footer-content{
+max-width:900px;
+margin:auto;
+}
+
+.site-footer h2{
+font-size:2rem;
+margin-bottom:15px;
+font-family:Trebuchet MS, sans-serif;
+}
+
+.site-footer p{
+opacity:0.85;
+margin-bottom:10px;
+}
+
+/* CONTACT LINKS */
+
+.footer-contacts{
+margin-top:25px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.footer-contacts a{
+color:white;
+text-decoration:none;
+border-bottom:1px solid transparent;
+transition:0.3s;
+}
+
+.footer-contacts a:hover{
+border-bottom:1px solid white;
+}
+
+/* COPYRIGHT */
+
+.footer-copy{
+margin-top:40px;
+font-size:0.9rem;
+opacity:0.6;
+}

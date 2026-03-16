@@ -3,8 +3,8 @@
     position: relative;
     color: white;
     padding: 150px 10%;
-    min-height: 100vh;
-    overflow: hidden;
+    /* min-height: 100vh; */
+    
 
     background: linear-gradient(270deg, #000000, #00173e, #02000b);
     background-size: 600% 600%;

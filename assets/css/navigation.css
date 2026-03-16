@@ -23,7 +23,7 @@
 
 /* NAV LINKS */
 
-.navigation a{
+.navigation .navigation__a{
     background-color:black;
     font-size:1rem;
     text-decoration:none;
@@ -38,7 +38,7 @@
 
 /* HOVER EFFECT */
 
-.navigation a:hover{
+.navigation .navigation__a:hover{
     color:black;
     background-color:white;
     transform:scale(1.1);

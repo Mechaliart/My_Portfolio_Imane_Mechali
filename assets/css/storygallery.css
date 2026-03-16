@@ -139,3 +139,70 @@ font-size:1rem;
 }
 
 }
+/* RIGHT ARROW INDICATOR */
+.gallery-card{
+display:flex;
+flex-direction:column;
+text-decoration:none;
+color:white;
+}
+
+.gallery-arrow{
+display:block;
+font-size:1.8rem;
+margin-top:10px;
+text-align:right;
+padding: 10px;
+
+
+}
+
+/* right arrow animation */
+.main__frozen__title{
+    /* filter: drop-shadow(0 0 15px #5795ff);
+   filter: brightness(120%); */
+   animation: filteranimation, brigthness;
+   animation-duration: 3000ms, 6000ms;
+    animation-direction: alternate, alternate;
+
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;}
+@keyframes filteranimation{
+    0%{
+        filter: drop-shadow(0 0 30px #5795ff);
+       
+    }
+    50%{
+        filter: drop-shadow(10 0 15px #5795ff);
+       
+    }
+    100%{
+        filter: drop-shadow(20 0 30px #5795ff);
+        
+    }
+    
+    
+    
+
+}
+@keyframes brightness{
+    0%{
+        filter:brightness(50%);
+       
+    }
+    50%{
+        filter:brightness(120%);
+       
+    }
+    100%{
+        filter: brightness(160%);
+        
+    }
+    
+    
+    
+
+}
+
+
+/*=============================================================wave effect=====================================*/

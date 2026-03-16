@@ -59,11 +59,21 @@
 
    
 }
-.hero a {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 20px;
+.hero__liens{
+    display: flex;
+    gap: 100px;
+    background-color: #000;
+    padding: 20px;
+}
+.hero__liens a {
+ 
+}
+.lien__video__hero {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    font-family: walrus, sans-serif;
+    border-radius: 20px;
+     text-decoration: none;
 }
 
