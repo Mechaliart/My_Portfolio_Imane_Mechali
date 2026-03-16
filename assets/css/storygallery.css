@@ -20,7 +20,7 @@ color:white;
 text-align:center;
 display: flex;
 flex-wrap: wrap;
-height: 100vh;
+min-height: 100vh;
 }
 .gallery_story_background{
 background: #000000;
