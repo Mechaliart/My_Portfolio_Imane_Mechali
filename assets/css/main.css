@@ -18,8 +18,10 @@
  @import "footer.css";
  
  
-
-
+html {
+    scroll-behavior: smooth;
+     /* height of your fixed nav */
+}
 
 *{
     margin: 0;

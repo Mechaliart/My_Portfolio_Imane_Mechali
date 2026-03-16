@@ -1,4 +1,5 @@
 .hobee__section {
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,11 +17,16 @@
 
 
 .hobee__video {
-    width: 1000px;
+    max-width: 100%;
+    /* width: 1000px; */
     height: 500px;
     object-fit: cover;
     border-radius: 10px;
     border: rgb(255, 221, 149) dashed 5px;
+}
+
+.hobee__video{
+    
 }
 .hobee__content {
     position: relative;
@@ -89,6 +95,32 @@
     opacity: 1;
     transform: translateY(0);
 }
+.hobee__main__title img {
+    width: 100%;           /* take full width of container */
+    max-width: 500px;      /* limits size on desktop */
+    height: auto;          /* maintain aspect ratio */
+}
+/* ================= HOBEE LINK ================= */
+.hobee__section a {
+    display: inline-block;
+    background-color: #ff9100;    /* golden button style */
+    color: #422008;               /* dark text for contrast */
+    font-family: cursive, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    font-size: 2rem;  
+    border: rgb(255, 221, 149) dashed 5px ;
+}
+
+.hobee__section a:hover {
+    background-color: #ffec99;    /* lighter gold on hover */
+    color: #644100;
+    transform: scale(1.05);
+}
 
 /* ================= RESPONSIVE ================= */
 
@@ -96,6 +128,9 @@
     .hobee__content {
         width: 90%;
         height: 250px;
+    }
+    .hobee__main__title{
+       width: clamp(350px, 45vw, 600px);
     }
 }
 
@@ -109,7 +144,7 @@
     padding-left: 60px;
     font-size: 1.5rem;
     font-weight: bolder;
-    width: 500px;
+    max-width: 500px;
  
 
 }

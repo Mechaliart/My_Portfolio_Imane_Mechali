@@ -1,95 +1,142 @@
-@media (max-width: 1024px) {
+/* ================= ILLUSTRATIONS SECTION ================= */
 
-.illustrations-gallery{
-padding: 100px 6%;
+.illustrations-gallery {
+    background: linear-gradient(120deg, #1a1a1a, #2a2a2a, #131313);
+    padding: clamp(80px, 8vw, 140px) clamp(40px, 6vw, 120px);
+    color: #f0f0f0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    transition: background 1s ease;
 }
+
+/* ================= TITLE ================= */
 
 .illustrations-title{
-font-size: 3rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: Resotho, sans-serif;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-bottom: 80px;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
 }
 
-/* .gallery_story_background{
-width: 100%;
-} */
-
-.illustrations-grid{
-grid-template-columns: repeat(2,1fr);
+/* glowing underline */
+.illustrations-title::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:3px;
+    margin:20px auto 0;
+    background: linear-gradient(90deg,#444444,#9ecbff);
+    border-radius:2px;
+    box-shadow:0 0 15px #5795ff;
+   
 }
 
+
+/* ================= GRID ================= */
+
+.illustrations-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* ONE element per row */
+    gap: 50px;
+    width: 100%;
+    max-width: 1800px; /* keeps it centered on big screens */
 }
 
-.illustrations-gallery{
-background:#131313;
-padding:80px ;
-color:white;
-text-align:center;
-min-height: 100vh;
-min-width: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 50px;
+/* ================= FIGURE ================= */
+
+.illustrations-grid figure {
+    background: rgba(0,0,0,0.4); /* subtle overlay */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* TITLE */
-
-.illustrations-title{
-font-size:3rem;
-margin-bottom:50px;
-font-family:Trebuchet MS, sans-serif;
+.illustrations-grid figure:hover {
+    background: rgba(0,0,0,0.6);
+    transform: scale(1.01);
 }
 
-/* GRID */
+/* ================= MEDIA ================= */
 
-.illustrations-grid{
-display:grid;
-/* grid-template-columns:repeat(auto-fit,minmax(800px,3fr)); */
-gap:40px;
-width: 1920px;
+.illustrations-grid img,
+.illustrations-grid video {
+    width: 100%;          
+    height: auto;         
+    object-fit: contain;  
+    display: block;
+    max-height: 90vh;     
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* FIGURE */
+/* ================= CAPTION ================= */
 
-.illustrations-grid figure{
-background:#000000;
-border-radius:10px;
-overflow:hidden;
+.illustrations-grid figcaption {
+    padding: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.95;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    text-align: left;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* IMAGE */
-
-.illustrations-grid img{
-width:100%;
-height:80%;
-object-fit:cover;
-display:block;
+.illustrations-grid figure:hover figcaption {
+    background: rgba(255,255,255,0.1);
+    color: #fffef5;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
-/* CAPTION */
+/* ================= EMAIL LINK ================= */
 
-.illustrations-grid figcaption{
-padding:20px 22px;
-font-size:1rem;
-line-height:1.6;
-opacity:0.9;
+.illustrations-grid figcaption a {
+    color: #ffd700;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
 }
 
-@media (max-width: 1024px) {
-
-.illustrations-gallery{
-padding: 100px 6%;
+.illustrations-grid figcaption a:hover {
+    border-bottom: 1px solid #ffd700;
 }
 
-.illustrations-title{
-font-size: 3rem;
+/* ================= TABLET / MOBILE ================= */
+
+@media (max-width: 900px) {
+    .illustrations-grid img,
+    .illustrations-grid video {
+        max-height: 70vh;
+    }
 }
 
-/* .gallery_story_background{
-width: 100%;
-} */
+@media (max-width: 600px) {
+    .illustrations-grid img,
+    .illustrations-grid video {
+        max-height: 50vh;
+    }
 
-.illustrations-grid{
-grid-template-columns: repeat(2,1fr);
-}
+    .illustrations-gallery {
+        padding: 60px 20px;
+    }
 
+    .illustrations-title {
+        font-size: 2.5rem;
+    }
+
+    .illustrations-grid figcaption {
+        padding: 20px;
+        font-size: 1rem;
+    }
 }

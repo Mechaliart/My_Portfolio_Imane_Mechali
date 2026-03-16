@@ -1,79 +1,146 @@
-/* ==================================hero ============================================ */
-.hero {
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    background-image: linear-gradient(0deg, #000, #00000000);
-    padding: 200px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+/* ================= HERO ================= */
 
-}
-.hero h1 {
-    font-size: 10rem;
-    margin-bottom: 20px;
-    font-family: Resotho, sans-serif;
-    letter-spacing: 50px;
-    margin: 0;
-    
-}
-.hero p {
-    font-size: 3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 20px;
-}
-.hero__content {
-    display: flex;
-    flex-direction: column;
-    flex-direction: row;
-    padding: 0;
-    align-items: flex-start;
-    /* flex-basis: 30%;
-    flex-grow: 1; */
-    padding-top: 0;
-    gap: 775px;
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-    
-}
-.hero__content h2 {
-   
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
- 
-    
+    text-align:center;
+    color:white;
+
+    padding:clamp(120px,18vh,220px) 20px;
+
+    position:relative;
+    overflow:hidden;
+
+    min-height:100vh;
+
+    background-image:linear-gradient(0deg,#000,#00000000);
 }
 
+/* PORTFOLIO TITLE */
 
-.background__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
-    z-index: -1;
-
-   
+.hero h1{
+    font-size:clamp(3rem,9vw,10rem);
+    letter-spacing:clamp(10px,3vw,45px);
+    font-family:Resotho,sans-serif;
+    margin:0;
 }
+
+/* NAME + YEAR CONTAINER */
+
+.hero__content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    width:min(900px,90%);
+    margin-top:25px;
+}
+
+/* NAME */
+
+.hero__content h2{
+    font-size:clamp(1.5rem,3vw,2.5rem);
+    font-family:'Trebuchet MS',sans-serif;
+}
+
+/* YEAR */
+
+.hero p{
+    font-size:clamp(1.2rem,2vw,2rem);
+}
+
+/* BACKGROUND VIDEO */
+
+.background__video{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-1;
+}
+
+/* ================= HERO LINKS ================= */
+
 .hero__liens{
-    display: flex;
-    gap: 100px;
-    background-color: #000;
-    padding: 20px;
-}
-.hero__liens a {
- 
-}
-.lien__video__hero {
-    background-color: #fff;
-    color: #000;
-    padding: 20px;
-    font-family: walrus, sans-serif;
-    border-radius: 20px;
-     text-decoration: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+    gap:clamp(20px,6vw,100px);
+
+    background:black;
+    padding:clamp(20px,3vw,35px);
 }
 
+/* EMAIL */
+
+.hero__liens a:first-child{
+    font-family:'Trebuchet MS',sans-serif;
+    font-size:clamp(0.9rem,1.2vw,1.2rem);
+
+    color:white;
+    text-decoration:none;
+
+    border-bottom:2px solid transparent;
+
+    transition:0.3s ease;
+}
+
+.hero__liens a:first-child:hover{
+    border-bottom:2px solid white;
+}
+
+/* PROJECT BUTTON */
+
+.lien__video__hero{
+    background:white;
+    color:black;
+
+    padding:clamp(12px,1.5vw,18px) clamp(20px,2vw,30px);
+
+    font-family:Walrus,sans-serif;
+    border-radius:20px;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+}
+
+.lien__video__hero:hover{
+    transform:scale(1.05);
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width:900px){
+
+.hero__content{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:600px){
+
+.hero__liens{
+flex-direction:column;
+gap:20px;
+}
+
+.hero h1{
+letter-spacing:10px;
+}
+
+}
