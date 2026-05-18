@@ -1,0 +1,21 @@
+.video__editing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #737373 0%, #764ba2 100%);
+    gap: 30px;
+}
+.edit__video {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: rgb(0, 0, 0) solid 5px;
+}
+.video__editing h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

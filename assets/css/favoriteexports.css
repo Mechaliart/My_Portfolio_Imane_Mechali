@@ -1,0 +1,14 @@
+.favorite__exports {
+    height: 100vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #737373 0%, #000000 100%);
+
+}
+.export__video {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: rgb(0, 0, 0) solid 5px;
+}
